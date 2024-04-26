@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 export const LargeScreenNavbar = () => {
-    const [joinTeamForm, setJoinTeamForm] = useState(true);
+    const [joinTeamForm, setJoinTeamForm] = useState(false);
     
     const showJoinForm = () => {
         setJoinTeamForm(!joinTeamForm);
@@ -27,7 +27,7 @@ export const LargeScreenNavbar = () => {
             </form>
           </div>)
         }
-        <section className="absolute lg:overflow-hidden border-b-2 w-[100vw] ">
+        <section className="absolute lg:overflow-hidden border-b-2 w-[100vw] z-10">
             <ul className={`mt-[20px] pl-[30px] pb-[10px] flex ml-[30vw]`}>
                 {
                     MenuItems.map((item, index) => (

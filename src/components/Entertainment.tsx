@@ -1,12 +1,68 @@
+import { useGSAP } from "@gsap/react";
 import sampleImg from "../assets/images/Mask-group.png"
+import gsap from "gsap";
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Entertainment = () => {
+
+  const gameRef = useRef<HTMLDivElement>(null);
+  const animeRef = useRef<HTMLDivElement>(null);
+
+  //animation and game animation
+  //anime
+  useGSAP(() => {
+
+    const anime = animeRef.current;
+
+    if(!anime) return;
+
+    gsap.from(anime, {
+      scale: 0,
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: anime,
+        start: "top 90%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play none none reverse"
+      }
+
+    })
+
+  });
+  //game
+  useGSAP(() => {
+
+    const game = gameRef.current;
+
+    if(!game) return;
+
+    gsap.from(game, {
+      scale: 0,
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: game,
+        start: "top 90%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play none none reverse"
+      }
+
+    })
+
+  });
+  
   return (
     <div className="py-[50px] bg-gradient-to-br from-purple-900 to-purple-300 lg:flex lg:flex-row lg:overflow-hidden lg:py-0">
         <section className="lg:overflow-hidden">
             <h1 className="font-bold text-center text-xl border-b-2 pb-5 lg:my-[20px] lg:absolute lg:text-center lg:ml-[5vw] lg:text-sm lg:pb-2">Explore Xsolarie Entertaiment Zone</h1>
             <div className="justify-center items-center flex flex-col my-8 lg:my-8 lg:items-start">
-              <div className="justify-center items-center flex flex-col lg:flex-row lg:items-start">
+              <div ref={animeRef} className="justify-center items-center flex flex-col lg:flex-row lg:items-start">
               <img src={sampleImg} alt="" className="h-[60vw] lg:w-[100px] lg:mt-8 lg:hidden"/>
             <div className="justify-center items-center flex flex-col px-10 lg:items-start lg:pr-[10vw]">
             <h1 className="text-2xl font-bold my-[20px] ml-[20px] lg:mt-[20px] lg:mb-0 lg:text-[16px]">Animations</h1>
@@ -15,7 +71,7 @@ const Entertainment = () => {
             </div>
             <img src={sampleImg} alt="" className="hidden lg:block lg:h-[50vh] lg:w-[30vw]"/>
             </div>
-            <div className="justify-center items-center flex flex-col mt-14 px-8 lg:items-start lg:flex-row">
+            <div ref={gameRef} className="justify-center items-center flex flex-col mt-14 px-8 lg:items-start lg:flex-row">
                 <img src={sampleImg} alt="" className="h-[60vw] lg:mt-2 lg:h-[50vh] lg:w-[30vw]"/>
                 <div className="justify-center items-center flex flex-col lg:ml-[15vw] lg:items-start">
                     <h1 className="text-2xl font-bold my-[20px] ml-[20px] lg:text-sm lg:mt-[10px] lg:mb-3 lg:text-[16px]">Games</h1>
