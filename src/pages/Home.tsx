@@ -18,7 +18,12 @@ const Home = () => {
     const video = videoRef.current;
     if (!video) {
       return console.log("no video");
+    } else {
+      video.play().catch(() => {
+        if(video)video.controls = true;
+      })
     }
+
 
     const handleVideoEnd = () => {
       if (video) {
@@ -100,9 +105,10 @@ const Home = () => {
           playsInline={true}
           key={homeBgVideo}
           ref={videoRef}
+          preload="true"
           className="absolute h-[100vh] w-[100vw] object-cover z-0"
         >
-          <source src={homeBgVideo} />
+          <source src={homeBgVideo} type="video/mp4"/>
         </video>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <section className="mt-[12vh] py-[20px] px-[20px] lg:mt-[15vh]">
