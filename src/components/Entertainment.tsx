@@ -1,5 +1,4 @@
 import { useGSAP } from "@gsap/react";
-import sampleImg from "../assets/images/Mask-group.png";
 import gsap from "gsap";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
