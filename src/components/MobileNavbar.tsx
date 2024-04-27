@@ -15,9 +15,6 @@ export const MobileNavbar = () => {
         setMobileNavbarVisible(true)
     };
 
-
-
-
   return (
 
         <section className="right-0 absolute pt-[30px] overflow-x-hidden z-10">
