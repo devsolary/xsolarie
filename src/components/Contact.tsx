@@ -1,14 +1,14 @@
 
 const Contact = () => {
 
-  const currentYear = new Date().getFullYear();
+
 
   return (
     <div className="px-[24px] py-8  lg:px-[10vw]">
         <div>
             <h1 className="text-3xl font-extrabold">Contact Us</h1>
             <p className="font-bold text-xl">Ready  to start your next project with us or havea question about our services? We'd love to hear from you! Get in touch with us today and let's create something extraordinary together.</p>
-            <div className="bg-purple-800 px-[10vw] rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
+            <div className="bg-purple-950 px-[10vw] rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
               <h1 className="text-center py-5 text-2xl font-bold lg:text-lg lg:py-2 text-white">Want to request for our services or have a question.
                 </h1>
                 <p className="font-bold border-b-2 text-center pb-2 lg:text-sm lg:pb-3 text-white">Let Us know Below</p>
@@ -29,10 +29,6 @@ const Contact = () => {
                 <p className="py-2"><strong  className="mr-7">Twitter : </strong> xsolarie</p>
                 <p className="py-2"><strong  className="mr-2">facebook : </strong>facebook.com/xsolarie</p>
             </div>
-        </div>
-        <div className="">
-          <p className="text-center font-bold text-xl">{currentYear} &copy; Xsolarie Tech Inc.</p>
-          <p className="text-center font-bold">ALL RIGHT RESERVED</p>
         </div>
     </div>
   )

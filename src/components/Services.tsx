@@ -131,7 +131,7 @@ const Services = () => {
           <h1 className="text-xl font-bold my-[20px] border-b-2 lg:text-sm lg:mt-[10px] text-white lg:mb-0">
             Frontend Development:
           </h1>
-          <p className="mx-[30px] text-center text-lg lg:text-[10px] lg:leading-3 text-white font-bold">
+          <p className="mx-[30px] text-center text-2xl lg:text-[10px] lg:leading-3 text-white ">
             Crafting User-friendly interface that enhance user experience.
           </p>
         </div>
@@ -149,7 +149,7 @@ const Services = () => {
           <h1 className="text-xl font-bold my-[20px] border-b-2 lg:text-sm lg:mt-[10px] lg:mb-0 text-white ">
             Backend Development:
           </h1>
-          <p className="mx-[30px] text-center text-lg lg:text-[10px] lg:leading-3 text-white font-bold">
+          <p className="mx-[30px] text-center text-2xl lg:text-[10px] lg:leading-3 text-white">
             Building robust and scalable backend system to power your
             application with latest technologies.
           </p>
@@ -168,7 +168,7 @@ const Services = () => {
           <h1 className="text-xl font-bold my-[20px] border-b-2 lg:text-sm lg:mt-[10px] lg:mb-0 text-white ">
             UI/UX Design:
           </h1>
-          <p className="mx-[30px] text-center text-lg lg:text-[10px] lg:leading-3 text-white font-bold">
+          <p className="mx-[30px] text-center text-2xl lg:text-[10px] lg:leading-3 text-white">
             designing visually stunning and intuitive interface that engage and
             delight users.
           </p>
@@ -188,7 +188,7 @@ const Services = () => {
             {" "}
             Mobile App Development:
           </h1>
-          <p className="mx-[30px] text-center text-lg lg:text-[10px] lg:leading-3 text-white font-bold">
+          <p className="mx-[30px] text-center text-2xl lg:text-[10px] lg:leading-3 text-white ">
             Creating seamless mobile experiences on android and iOS platforms.
           </p>
         </div>
@@ -206,7 +206,7 @@ const Services = () => {
           <h1 className="text-xl font-bold my-[20px] border-b-2 lg:text-sm lg:mt-[10px] lg:mb-0 text-white ">
             project Management:
           </h1>
-          <p className="mx-[30px] text-center text-lg lg:text-[10px] lg:leading-3 text-white font-bold">
+          <p className="mx-[30px] text-center text-2xl lg:text-[10px] lg:leading-3 text-white ">
             Ensuring smooth project execution from inception to complete.
           </p>
         </div>

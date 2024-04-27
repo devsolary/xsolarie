@@ -52,7 +52,7 @@ const Entertainment = () => {
   });
 
   return (
-    <div className="py-[50px] bg-purple-900 lg:flex lg:flex-row lg:overflow-hidden lg:py-0">
+    <div className="py-[50px] mt-0 bg-purple-900 lg:flex lg:flex-row lg:overflow-hidden lg:py-0">
       <section className="lg:overflow-hidden">
         <h1 className=" font-bold text-white text-center text-2xl border-b-2 pb-5 lg:my-[20px] lg:absolute lg:text-center lg:ml-[7vw] lg:text-xl lg:pb-2">
           Explore Xsolarie Entertaiment Zone
@@ -76,7 +76,7 @@ const Entertainment = () => {
               <h1 className="text-3xl font-bold text-white my-[20px] ml-[20px] lg:mt-[20px] lg:mb-0 lg:text-2xl">
                 Animations
               </h1>
-              <p className="text-xl font-bold text-white lg:w-[40vw] lg:h-[22vh] lg:text-lg">
+              <p className="text-xl text-white lg:w-[40vw] lg:h-[22vh] lg:text-lg">
                 Bringing stories to life with captivating visuals and engaing
                 narratives. From short, impactful clips to instricate, narrative
                 driven sequence, each animation is a testament to the teams
@@ -117,7 +117,7 @@ const Entertainment = () => {
               <h1 className="text-3xl font-bold text-white my-[20px] ml-[20px] lg:text-sm lg:mt-[10px] lg:mb-3 lg:text-[16px]">
                 Games
               </h1>
-              <p className="text-xl font-bold text-white lg:w-[40vw] lg:h-[22vh] lg:text-[12px]">
+              <p className="text-xl text-white lg:w-[40vw] lg:h-[22vh] lg:text-[12px]">
                 {" "}
                 Developing immersive and entertaininggames that resonate with
                 audiences of all ages. delves deep into the realm of interactive

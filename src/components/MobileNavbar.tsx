@@ -25,7 +25,7 @@ export const MobileNavbar = () => {
                 }
                 </div>
                 
-            <ul className={`mt-[40px] pt-[30px] bg-purple-700 pb-[30px] rounded-xl transition-transform transform ${mobileNavbarVisible ? "translate-x-0" : "translate-x-[100vw]"}`}>
+            <ul className={`mt-[40px] pt-[30px] bg-purple-900 pb-[30px] rounded-xl transition-transform transform ${mobileNavbarVisible ? "translate-x-0" : "translate-x-[100vw]"}`}>
                 {
                     MenuItems.map((item, index) => (
                         <li key={index} className="pt-[20px] pl-8">
