@@ -65,7 +65,7 @@ const Entertainment = () => {
               autoPlay
               muted
               playsInline={true}
-              key={animeVideo}
+              key={1}
               loop
               className="rounded-3xl w-[80vw] lg:hidden"
             >
@@ -91,7 +91,7 @@ const Entertainment = () => {
               autoPlay
               muted
               playsInline={true}
-              key={animeVideo}
+              key={2}
               loop
               className="rounded-3xl w-[80vw] hidden lg:block lg:h-[50vh] lg:w-[30vw]"
             >
@@ -106,7 +106,7 @@ const Entertainment = () => {
               autoPlay
               muted
               playsInline={true}
-              key={gameVideo}
+              key={3}
               loop
               className="rounded-3xl w-[80vw] lg:h-[50vh] lg:w-[30vw]"
             >

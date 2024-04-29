@@ -18,20 +18,17 @@ const Home = () => {
     const video = videoRef.current;
     if (!video) {
       return console.log("no video");
-    } else {
-      video.play().catch(() => {
-        if(video)video.controls = true;
-      })
+    } 
+    if(video.paused){
+      video.play();
     }
 
 
     const handleVideoEnd = () => {
       if (video) {
         const videoLength = video.duration;
-        console.log(video);
         const loopVideoFrom = videoLength - 2.7;
         video.currentTime = loopVideoFrom;
-
         video.play();
       }
     };
@@ -116,23 +113,22 @@ const Home = () => {
             id="homeTop"
             className="font-bold text-xl bg-gradient-to-r from-[#5BFFDB] to-white py-[10px] pl-[5px] text-transparent bg-clip-text h1SlideIn opacity-0 mt-10 text-center "
           >
-            Welcome to Xsolarie{" "}
+            Welcome to Xsolarie
           </h1>
           <p className="text-4xl font-bold px-[10px] py-[10px] pSlideIn text-white lg:mx-[20vw] lg:text-center">
-            {" "}
-            Experience Exceptional Digital Solutions and Captivating
-            Entertainment Experience.
+            Experience exceptional digital solutions and captivating
+            entertainment experience.
           </p>
         </section>
       </div>
-      <div  className="bg-purple-400">
+      <div  className="bg-[#5BFFDB]">
         <section ref={aboutScrollRef} className="pt-[50px] px-[20px]">
           <h1 className="text-4xl font-extrabold">About Us</h1>
           <p className="py-[20px] text-xl font-bold">
             At Xsolarie, we are more than just a digital agency; we are your
             partners in success.
             <br />
-            <br /> With a passion for technology and flair for creativity, out
+            <br /> With a passion for technology and flair for creativity, our
             team of experts is committed to delivering outstanding results
             tailored to your unique need.
             <br />
@@ -146,7 +142,7 @@ const Home = () => {
         <Entertainment />
         <Techbologies />
       </div>
-      <div className="bg-purple-400">
+      <div className="bg-[#5BFFDB]">
       <Contact />
       </div>
       <div>

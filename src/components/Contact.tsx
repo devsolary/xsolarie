@@ -1,14 +1,74 @@
+import { useGSAP } from "@gsap/react"
+import { useRef } from "react"
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
 
+  const contactHeaderRef = useRef<HTMLHeadingElement>(null);
+  const contactRef = useRef<HTMLParagraphElement>(null);
+  const formRef = useRef<HTMLDivElement>(null);
 
+  useGSAP(() => {
+    const contactHeader = contactHeaderRef.current;
+    const contact = contactRef.current;
+    const form = formRef.current;
+
+    if(!contactHeader) return;
+
+    gsap.from(contactHeader, {
+      x: -100,
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger : {
+        trigger: contactHeader,
+        start: "top 80%",
+        end: "bottom 5%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      }
+    });
+
+    if(!contact) return;
+
+    gsap.from(contact, {
+      x: 100,
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger : {
+        trigger: contact,
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      }
+    });
+
+    if(!form) return;
+
+    gsap.from(form, {
+      scale: 0,
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: form,
+        start: "top 80%",
+        end: "bottom 80%",
+        scrub: 1,
+        toggleActions: "play none none reverse",
+      }
+    })
+
+
+  })
 
   return (
     <div className="px-[24px] py-8  lg:px-[10vw]">
         <div>
-            <h1 className="text-3xl font-extrabold">Contact Us</h1>
-            <p className="font-bold text-xl">Ready  to start your next project with us or havea question about our services? We'd love to hear from you! Get in touch with us today and let's create something extraordinary together.</p>
-            <div className="bg-purple-950 px-[10vw] rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
+            <h1 ref={contactHeaderRef} className="text-3xl font-extrabold">Contact Us</h1>
+            <p ref={contactRef} className="font-bold text-xl">Ready  to start your next project with us or havea question about our services? We'd love to hear from you! Get in touch with us today and let's create something extraordinary together.</p>
+            <div ref={formRef}  className="bg-purple-950 px-[10vw] rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
               <h1 className="text-center py-5 text-2xl font-bold lg:text-lg lg:py-2 text-white">Want to request for our services or have a question.
                 </h1>
                 <p className="font-bold border-b-2 text-center pb-2 lg:text-sm lg:pb-3 text-white">Let Us know Below</p>
