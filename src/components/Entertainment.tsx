@@ -100,7 +100,7 @@ const Entertainment = () => {
           </div>
           <div
             ref={gameRef}
-            className="justify-center items-center flex flex-col mt-14 px-8 lg:items-start lg:flex-row"
+            className="justify-center items-center flex flex-col mt-8 px-8 lg:items-start lg:flex-row"
           >
             <video
               autoPlay
@@ -113,10 +113,10 @@ const Entertainment = () => {
               <source src={gameVideo} />
             </video>
             <div className="justify-center items-center flex flex-col lg:ml-[15vw] lg:items-start">
-              <h1 className="text-3xl font-bold text-white my-[20px] ml-[20px] lg:text-sm lg:mt-[10px] lg:mb-3 lg:text-[16px]">
+              <h1 className="text-3xl font-bold text-white my-[20px] ml-[20px] lg:mt-[10px] lg:mb-3 lg:text-2xl">
                 Games
               </h1>
-              <p className="text-xl text-white lg:w-[40vw] lg:h-[22vh] lg:text-[12px]">
+              <p className="text-xl text-white lg:w-[40vw] lg:h-[22vh] lg:text-lg">
                 {" "}
                 Developing immersive and entertaininggames that resonate with
                 audiences of all ages. delves deep into the realm of interactive

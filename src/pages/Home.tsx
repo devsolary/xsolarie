@@ -110,11 +110,11 @@ const Home = () => {
         <section className="mt-[12vh] py-[20px] px-[20px] lg:mt-[15vh]">
           <h1
             id="homeTop"
-            className="font-bold text-xl bg-gradient-to-r from-[#5BFFDB] to-white py-[10px] pl-[5px] text-transparent bg-clip-text h1SlideIn opacity-0 mt-10 text-center "
+            className="font-bold text-xl bg-gradient-to-r from-[#5BFFDB] to-white py-[10px] pl-[5px] text-transparent bg-clip-text h1SlideIn opacity-0 mt-10 text-center lg:mt-8"
           >
             Welcome to Xsolarie
           </h1>
-          <p className="text-4xl font-bold px-[10px] py-[10px] pSlideIn text-white lg:mx-[20vw] lg:text-center">
+          <p className="text-4xl font-bold px-[10px] py-[10px] pSlideIn text-white lg:mx-[20vw] lg:text-center lg:mt-14">
             Experience exceptional digital solutions and captivating
             entertainment experience.
           </p>

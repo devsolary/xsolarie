@@ -6,12 +6,29 @@ import {
 import { Frameworks } from "../items/Frameworks";
 import { MobileDevItems } from "../items/mobileDe";
 import { DesignToolItems } from "../items/DesignTools";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
 const Techbologies = () => {
   const [pLcurr, setpLCurr] = useState(0);
   const [frameworkCurr, setFrameworkCurr] = useState(0);
   const [mobileDevCurr, setMobileDevCurr] = useState(0);
   const [animeCurr, setAnimeCurr] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
+
+  //checkscreen size function
+  useEffect(() =>{ 
+    const setScreenWidth = () => {
+      if(window.innerWidth >= 768) {
+        setIsLargeScreen(true)
+      }
+    }
+
+    setScreenWidth();
+
+    window.addEventListener("resize", setScreenWidth)
+
+    return () => window.removeEventListener("resize", setScreenWidth)
+  }, []);
 
 
 //programming language next and prev
@@ -102,7 +119,7 @@ const Techbologies = () => {
 
   return (
     <div className="bg-purple-900">
-      <h1 className="text-center text-2xl font-bold text-white">
+      <h1 className="text-center text-2xl font-bold text-white border-b-2 lg:mx-[30vw] pb-2 mb-5">
         Technologies Use By Xsolarie
       </h1>
       <section className="px-[10vw]">
@@ -114,7 +131,7 @@ const Techbologies = () => {
             onClick={() => pLprev(ProgrammingLanguageitems)}
             className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-5 px-2 py-2"
           >
-            &lt;
+            <FaArrowAltCircleLeft />
           </button>
           <div
             className={`flex flex-row overflow-x-hidden items-center mx-[10vw] transition ease-out duration-40`}
@@ -122,13 +139,13 @@ const Techbologies = () => {
             {ProgrammingLanguageitems.map((item, i) => (
               <div
                 key={i}
-                className="flex transition ease-out duration-100 px-[10vw] lg:mr-[15vw] pb-4"
+                className="flex transition ease-out duration-100 px-[10vw] pb-4 lg:px-[7vw]"
                 style={{
-                  transform: `translateX(-${pLcurr * 60}vw)`,
+                  transform: `translateX(-${ isLargeScreen ? pLcurr * 30 : pLcurr * 60}vw)`,
                 }}
               >
                 <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white">
+                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -137,7 +154,7 @@ const Techbologies = () => {
               onClick={() => pLnext(ProgrammingLanguageitems)}
               className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-0 px-2 py-2 right-[10vw]"
             >
-              &gt;
+              <FaArrowAltCircleRight />
             </button>
           </div>
         </section>
@@ -149,7 +166,7 @@ const Techbologies = () => {
             onClick={() => frameworkPrev(Frameworks)}
             className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-5 px-2 py-2"
           >
-            &lt;
+            <FaArrowAltCircleLeft />
           </button>
           <div
             className={`flex flex-row overflow-x-hidden items-center mx-[10vw] transition ease-out duration-40`}
@@ -157,13 +174,13 @@ const Techbologies = () => {
             {Frameworks.map((item, i) => (
               <div
                 key={i}
-                className="flex transition ease-out duration-40 px-[10vw] lg:mr-[15vw] pb-4"
+                className="flex transition ease-out duration-40 px-[10vw] pb-4 lg:px-[7vw]"
                 style={{
-                  transform: `translateX(-${frameworkCurr * 60}vw)`,
+                  transform: `translateX(-${ isLargeScreen ? frameworkCurr * 30 : frameworkCurr * 60}vw)`,
                 }}
               >
                 <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white">
+                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -172,7 +189,7 @@ const Techbologies = () => {
               onClick={() => frameworkNext(Frameworks)}
               className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-0 px-2 py-2 right-[10vw]"
             >
-              &gt;
+              <FaArrowAltCircleRight />
             </button>
           </div>
         </section>
@@ -184,7 +201,7 @@ const Techbologies = () => {
             onClick={() => mobileDevPrev(MobileDevItems)}
             className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-5 px-2 py-2"
           >
-            &lt;
+            <FaArrowAltCircleLeft />
           </button>
           <div
             className={`flex flex-row overflow-x-hidden items-center mx-[10vw] transition ease-out duration-40`}
@@ -192,13 +209,13 @@ const Techbologies = () => {
             {MobileDevItems.map((item, i) => (
               <div
                 key={i}
-                className="flex transition ease-out duration-40 px-[10vw] lg:mr-[15vw] pb-4"
+                className="flex transition ease-out duration-40 px-[10vw] pb-4 lg:px-[7vw]"
                 style={{
-                  transform: `translateX(-${mobileDevCurr * 60}vw)`,
+                  transform: `translateX(-${ isLargeScreen ? mobileDevCurr * 30 : mobileDevCurr * 60}vw)`,
                 }}
               >
                 <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white">
+                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -207,7 +224,7 @@ const Techbologies = () => {
               onClick={() => mobileDevNext(MobileDevItems)}
               className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-0 px-2 py-2 right-[10vw]"
             >
-              &gt;
+              <FaArrowAltCircleRight />
             </button>
           </div>
         </section>
@@ -219,7 +236,7 @@ const Techbologies = () => {
             onClick={() => animePrev(DesignToolItems)}
             className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-5 px-2 py-2"
           >
-            &lt;
+            <FaArrowAltCircleLeft />
           </button>
           <div
             className={`flex flex-row overflow-x-hidden items-center mx-[10vw] transition ease-out duration-40`}
@@ -227,13 +244,13 @@ const Techbologies = () => {
             {DesignToolItems.map((item, i) => (
               <div
                 key={i}
-                className="flex transition ease-out duration-40 px-[10vw] lg:mr-[15vw] pb-4"
+                className="flex transition ease-out duration-40 px-[10vw] pb-4 lg:px-[7vw]"
                 style={{
-                  transform: `translateX(-${animeCurr * 60}vw)`,
+                  transform: `translateX(-${ isLargeScreen ? animeCurr * 30 : animeCurr * 60}vw)`,
                 }}
               >
                 <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white">
+                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -242,7 +259,7 @@ const Techbologies = () => {
               onClick={() => animeNext(DesignToolItems)}
               className="absolute font-bold text-2xl rounded-full bg-gradient-to-r from-[#772DB9] to-white mt-0 px-2 py-2 right-[10vw]"
             >
-              &gt;
+              <FaArrowAltCircleRight />
             </button>
           </div>
         </section>
