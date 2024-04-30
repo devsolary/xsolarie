@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { MenuItems } from "../items/MenuItems"
 import { Link } from "react-router-dom"
+import { FaBars, FaFacebook, FaPhoneAlt, FaInstagram, FaTwitter } from "react-icons/fa"
+import { IoCloseSharp } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 
 
 export const MobileNavbar = () => {
@@ -18,14 +21,14 @@ export const MobileNavbar = () => {
   return (
 
         <section className="right-0 absolute pt-[30px] overflow-x-hidden z-10">
-            <div className="absolute right-0">
+            <div className="absolute right-0 top-0">
                 {
-                    mobileNavbarVisible ? (<><button className="text-xl text-white" onClick={handleCloseNav}>close</button>
-                    </>) : (<><button className="text-xl text-white" onClick={handleOpenNav}>open</button></>)
+                    mobileNavbarVisible ? (<><button className="text-xl p-3 rounded-xl text-white bg-purple-800 border-2 border-whit" onClick={handleCloseNav}><IoCloseSharp /></button>
+                    </>) : (<><button className="text-xl p-3 rounded-xl bg-purple-800 text-white border-2 border-white" onClick={handleOpenNav}><FaBars /></button></>)
                 }
                 </div>
                 
-            <ul className={`mt-[40px] pt-[30px] bg-purple-900 pb-[30px] rounded-xl transition-transform transform ${mobileNavbarVisible ? "translate-x-0" : "translate-x-[100vw]"}`}>
+            <ul className={`mt-[18px] pt-[30px] bg-purple-900 pb-[30px] rounded-xl transition-transform transform ${mobileNavbarVisible ? "translate-x-0" : "translate-x-[100vw]"}`}>
                 {
                     MenuItems.map((item, index) => (
                         <li key={index} className="pt-[20px] pl-8">

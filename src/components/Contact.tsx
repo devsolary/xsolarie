@@ -3,6 +3,8 @@ import { useRef } from "react"
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
+import { FaFacebook, FaPhoneAlt, FaInstagram, FaTwitter } from "react-icons/fa"
+import { MdOutlineMail } from "react-icons/md";
 
 const Contact = () => {
 
@@ -82,12 +84,12 @@ const Contact = () => {
                 <button className="w-[50%] ml-[25%] my-7 bg-gradient-to-r from-purple-950 to-white font-bold p-2 rounded-3xl">Send Message</button>
               </form>
             </div>
-            <div className="py-8">
-                <p className="py-2"><strong className="mr-10">Email : </strong> contact@xsolarie.com</p>
-                <p className="py-2"><strong  className="mr-7">Phone : </strong> +234-916-877-169</p>
-                <p className="py-2"><strong>Instagram : </strong>      xsolarie</p>
-                <p className="py-2"><strong  className="mr-7">Twitter : </strong> xsolarie</p>
-                <p className="py-2"><strong  className="mr-2">facebook : </strong>facebook.com/xsolarie</p>
+            <div className="py-8 border-2 px-5 rounded-2xl border-black">
+                <p className="py-2  flex flex-row"><strong className="mr-12  flex flex-row">Email <MdOutlineMail className="mx-2 text-2xl"/> : </strong> contact@xsolarie.com</p>
+                <p className="py-2 flex flex-row"><strong  className="mr-10 flex flex-row">Phone <FaPhoneAlt className="mx-2 text-2xl"/>: </strong> +234-916-877-169</p>
+                <p className="py-2 flex flex-row"><strong className="py-2 flex flex-row mr-3">Instagram <FaInstagram className="mx-2 text-2xl" />: </strong>  xsolarie</p>
+                <p className="py-2 flex flex-row"><strong  className="mr-9 flex flex-row">Twitter <FaTwitter className="mx-2 text-2xl" />: </strong> xsolarie</p>
+                <p className="py-2 flex flex-row"><strong  className="mr-2 flex flex-row">facebook <FaFacebook className="mx-2 text-2xl mr-4" />: </strong>facebook.com/xsolarie</p>
             </div>
         </div>
     </div>
