@@ -6,7 +6,12 @@ import cPlusPlus from "../assets/images/c++.png"
 import typeScript from "../assets/images/typescript.png"
 import rust from "../assets/images/Rust.svg"
 
-export const ProgrammingLanguageitems = [
+export interface MyObject {
+    image : string;
+    title : string;
+}
+
+export const ProgrammingLanguageitems : MyObject[] = [
     {
         image : javaScript,
         title : "javaScript"

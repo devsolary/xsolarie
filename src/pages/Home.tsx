@@ -7,7 +7,6 @@ import Techbologies from "../components/Techbologies";
 import Contact from "../components/Contact";
 import { useEffect, useRef } from "react";
 import homeBgVideo from "../assets/videos/homeBgVideo.mp4";
-import Footer from "../components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -144,9 +143,6 @@ const Home = () => {
       </div>
       <div className="bg-[#5BFFDB]">
       <Contact />
-      </div>
-      <div>
-        <Footer />
       </div>
     </>
   );

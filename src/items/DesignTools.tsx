@@ -1,22 +1,25 @@
-export const DesignToolItems = [
+import { MyObject } from "./ProgramminLanguageItem"
+import blender from "../assets/images/Blender.svg"
+import unity from "../assets/images/Unity.svg"
+import figma from "../assets/images/figma.jpg"
+import adobe from "../assets/images/Adobe.svg"
+
+
+export const DesignToolItems : MyObject[] = [
     {
-        images : "",
+        image : blender,
         title : "Blender",
     },
     {
-        images : "",
+        image : unity,
         title : "Unity",
     },
     {
-        images : "",
+        image : figma,
         title : "Figma",
     },
     {
-        images : "",
-        title : "Sketch",
-    },
-    {
-        images : "",
+        image : adobe,
         title : "Adobe Creative Suite",
     },
 ]

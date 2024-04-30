@@ -4,8 +4,10 @@ import node from "../assets/images/Node.svg"
 import express from "../assets/images/Node.svg"
 import django from "../assets/images/Django.svg"
 import flask from "../assets/images/Flask.svg"
+import { MyObject } from "./ProgramminLanguageItem"
 
-export const Frameworks = [
+
+export const Frameworks : MyObject[] = [
     {
         image : reactImg,
         title : "React"
@@ -16,11 +18,11 @@ export const Frameworks = [
     },
     {
         image : node,
-        title : "Node.js"
+        title : "Node"
     },
     {
         image : express,
-        title : "Express.js"
+        title : "Express"
     },
     {
         image : django,
