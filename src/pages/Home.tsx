@@ -7,11 +7,13 @@ import Techbologies from "../components/Techbologies";
 import Contact from "../components/Contact";
 import { useEffect, useRef } from "react";
 import homeBgVideo from "../assets/videos/homeBgVideo.mp4";
+import Preloading from "../components/Preloading";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const aboutScrollRef = useRef<HTMLDivElement>(null);
+ 
   //video homeBg
   useEffect(() => {
     const video = videoRef.current;
@@ -21,7 +23,6 @@ const Home = () => {
     if(video.paused){
       video.play();
     }
-
 
     const handleVideoEnd = () => {
       if (video) {
@@ -91,10 +92,11 @@ const Home = () => {
     );
   }, []);
 
+
+
   return (
     <>
-      {" "}
-      <div className="w-[100vw] h-[100vh] overflow-hidden bg-gradient-to-br from-purple-950 to-purple-500">
+      {homeBgVideo ? (<div><div className="w-[100vw] h-[100vh] overflow-hidden bg-gradient-to-br from-purple-950 to-purple-500">
         <video
           autoPlay
           muted
@@ -143,7 +145,7 @@ const Home = () => {
       </div>
       <div className="bg-[#405B88] overflow-hidden">
       <Contact />
-      </div>
+      </div></div>) : (<Preloading />)}
     </>
   );
 };
