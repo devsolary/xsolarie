@@ -122,7 +122,7 @@ const Home = () => {
           </p>
         </section>
       </div>
-      <div  className="bg-[#405B88]">
+      <div  className="">
         <section ref={aboutScrollRef} className="pt-[50px] px-[20px]">
           <h1 className="text-4xl font-extrabold">About Us</h1>
           <p className="py-[20px] text-xl font-bold">
@@ -143,7 +143,7 @@ const Home = () => {
         <Entertainment />
         <Techbologies />
       </div>
-      <div className="bg-[#405B88] overflow-hidden">
+      <div className="overflow-hidden">
       <Contact />
       </div></div>) : (<Preloading />)}
     </>
