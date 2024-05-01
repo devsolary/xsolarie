@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { ServiceItems } from "../items/ServicesItems";
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react";

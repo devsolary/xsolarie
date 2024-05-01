@@ -1,9 +1,8 @@
 import { useState } from "react"
 import { MenuItems } from "../items/MenuItems"
 import { Link } from "react-router-dom"
-import { FaBars, FaFacebook, FaPhoneAlt, FaInstagram, FaTwitter } from "react-icons/fa"
+import { FaBars } from "react-icons/fa"
 import { IoCloseSharp } from "react-icons/io5";
-import { MdOutlineMail } from "react-icons/md";
 
 
 export const MobileNavbar = () => {
