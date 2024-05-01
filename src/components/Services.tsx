@@ -37,11 +37,11 @@ const Services = () => {
       <h1 className="font-bold text-center text-3xl border-b-2 lg:my-[20px] lg:absolute lg:text-center lg:ml-[5vw] text-white">
         SERVICES
       </h1>
-      <section className="px-[30px] justify-center items-center lg:flex lg:flex-row lg:my-0 lg:px-0 lg:ml-[4vw]" >
+      <section className="px-[30px] justify-center items-center lg:flex lg:flex-row lg:my-0 lg:px-0 lg:ml-[4vw] overflow-hidden" >
       {
         ServiceItems.map((service, i) => (
           <div key={i} ref={el => serviceRef.current[i] = el} 
-          className="flex flex-col justify-center items-center from-gray-400 py-8 my-8 rounded-3xl lg:h-[45vh] lg:w-[17vw] lg:mx-[10px] lg:py-[30px] lg:my-0"
+          className="flex flex-col justify-center items-center from-gray-400 py-8 my-8 rounded-3xl lg:h-[45vh] lg:w-[17vw] lg:mx-[10px] lg:py-[30px]"
           style={{
             background: "radial-gradient(purple, #262650)",
           }}
