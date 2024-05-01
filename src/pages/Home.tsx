@@ -136,12 +136,12 @@ const Home = () => {
           </p>
         </section>
       </div>
-      <div className="bg-purple-900">
+      <div className="bg-purple-900 overflow-hidden">
         <Services />
         <Entertainment />
         <Techbologies />
       </div>
-      <div className="bg-[#5BFFDB]">
+      <div className="bg-[#5BFFDB] overflow-hidden">
       <Contact />
       </div>
     </>

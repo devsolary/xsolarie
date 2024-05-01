@@ -33,7 +33,7 @@ const Services = () => {
 
 
   return (
-    <div className="py-[50px] bg-purple-900 lg:h-[70vh] lg:flex lg:flex-row lg:overflow-x-hidden lg:py-0">
+    <div className="overflow-hidden py-[50px] bg-purple-900 lg:h-[70vh] lg:flex lg:flex-row lg:overflow-x-hidden lg:py-0">
       <h1 className="font-bold text-center text-3xl border-b-2 lg:my-[20px] lg:absolute lg:text-center lg:ml-[5vw] text-white">
         SERVICES
       </h1>

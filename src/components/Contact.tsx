@@ -66,7 +66,7 @@ const Contact = () => {
   })
 
   return (
-    <div className="px-[24px] py-8  lg:px-[10vw]">
+    <div className="px-[24px] py-8  lg:px-[10vw] overflow-hidden">
         <div>
             <h1 ref={contactHeaderRef} className="text-3xl font-extrabold">Contact Us</h1>
             <p ref={contactRef} className="font-bold text-xl">Ready  to start your next project with us or havea question about our services? We'd love to hear from you! Get in touch with us today and let's create something extraordinary together.</p>

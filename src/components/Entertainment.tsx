@@ -51,7 +51,7 @@ const Entertainment = () => {
   });
 
   return (
-    <div className="py-[50px] mt-0 bg-purple-900 lg:flex lg:flex-row lg:overflow-hidden lg:py-0">
+    <div className="py-[50px] mt-0 bg-purple-900 lg:flex lg:flex-row overflow-hidden lg:py-0">
       <section className="lg:overflow-hidden">
         <h1 className=" font-bold text-white text-center text-2xl border-b-2 pb-5 lg:my-[20px] lg:absolute lg:text-center lg:ml-[7vw] lg:text-xl lg:pb-2">
           Explore Xsolarie Entertaiment Zone
