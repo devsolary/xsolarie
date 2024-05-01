@@ -85,11 +85,11 @@ const Contact = () => {
               </form>
             </div>
             <div className="py-8 border-2 px-5 rounded-2xl border-black">
-                <p className="py-2  flex flex-row"><strong className="mr-12  flex flex-row">Email <MdOutlineMail className="mx-2 text-2xl"/> : </strong> contact@xsolarie.com</p>
-                <p className="py-2 flex flex-row"><strong  className="mr-10 flex flex-row">Phone <FaPhoneAlt className="mx-2 text-2xl"/>: </strong> +234-916-877-169</p>
-                <p className="py-2 flex flex-row"><strong className="py-2 flex flex-row mr-3">Instagram <FaInstagram className="mx-2 text-2xl" />: </strong>  xsolarie</p>
-                <p className="py-2 flex flex-row"><strong  className="mr-9 flex flex-row">Twitter <FaTwitter className="mx-2 text-2xl" />: </strong> xsolarie</p>
-                <p className="py-2 flex flex-row"><strong  className="mr-2 flex flex-row">facebook <FaFacebook className="mx-2 text-2xl mr-4" />: </strong>facebook.com/xsolarie</p>
+                <p className="py-2 text-sm  flex flex-row"><strong className="mr-2  flex flex-row">Email <MdOutlineMail className="mx-2 text-2xl"/> : </strong> contact@xsolarie.com</p>
+                <p className="py-2 text-sm flex flex-row"><strong  className="mr-2 flex flex-row">Phone <FaPhoneAlt className="mx-2 text-2xl"/>: </strong> +234-916-877-169</p>
+                <p className="py-2 text-sm flex flex-row"><strong className="py-2 flex flex-row mr-3">Instagram <FaInstagram className="mx-2 text-2xl" />: </strong>  xsolarie</p>
+                <p className="py-2 flex flex-row"><strong  className="mr-2 flex flex-row">Twitter <FaTwitter className="mx-2 text-2xl" />: </strong> xsolarie</p>
+                <p className="py-2 text-sm flex flex-row"><strong  className="mr-2 flex flex-row">facebook <FaFacebook className="mx-1 text-2xl mr-1" />: </strong>facebook.com/xsolarie</p>
             </div>
         </div>
     </div>

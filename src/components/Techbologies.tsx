@@ -144,8 +144,8 @@ const Techbologies = () => {
                   transform: `translateX(-${ isLargeScreen ? pLcurr * 30 : pLcurr * 60}vw)`,
                 }}
               >
-                <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
+                <img src={item.image} alt="" className="h-[70px] w-[50px] rounded-3xl" />
+                <p className="mx-5 w-[30vw] pt-[15px] text-sm font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -179,8 +179,8 @@ const Techbologies = () => {
                   transform: `translateX(-${ isLargeScreen ? frameworkCurr * 30 : frameworkCurr * 60}vw)`,
                 }}
               >
-                <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
+                <img src={item.image} alt="" className="h-[70px] w-[50px] rounded-3xl" />
+                <p className="mx-5 w-[30vw] pt-[15px] text-sm font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -214,8 +214,8 @@ const Techbologies = () => {
                   transform: `translateX(-${ isLargeScreen ? mobileDevCurr * 30 : mobileDevCurr * 60}vw)`,
                 }}
               >
-                <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
+                <img src={item.image} alt="" className="h-[70px] w-[50px] rounded-3xl" />
+                <p className="mx-5 w-[30vw] pt-[15px] text-sm font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>
@@ -249,8 +249,8 @@ const Techbologies = () => {
                   transform: `translateX(-${ isLargeScreen ? animeCurr * 30 : animeCurr * 60}vw)`,
                 }}
               >
-                <img src={item.image} alt="" className="h-[70px] rounded-3xl" />
-                <p className="mx-5 w-[30vw] pt-[15px] text-xl font-bold text-white lg:w-[13vw]">
+                <img src={item.image} alt="" className="h-[70px] w-[50px] rounded-3xl" />
+                <p className="mx-5 w-[30vw] pt-[15px] text-sm font-bold text-white lg:w-[13vw]">
                   {item.title}
                 </p>
               </div>

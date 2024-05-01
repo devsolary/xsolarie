@@ -18,11 +18,11 @@ export const Frameworks : MyObject[] = [
     },
     {
         image : node,
-        title : "Node"
+        title : "Nodejs"
     },
     {
         image : express,
-        title : "Express"
+        title : "Expressjs"
     },
     {
         image : django,

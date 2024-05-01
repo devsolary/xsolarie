@@ -34,7 +34,7 @@ export const ProgrammingLanguageitems : MyObject[] = [
     },
     {
         image : typeScript,
-        title : "TypeScript"
+        title : "TS"
     },
     {
         image : rust,
