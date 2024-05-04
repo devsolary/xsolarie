@@ -118,8 +118,8 @@ const Techbologies = () => {
 
 
   return (
-    <div className="bg-purple-900 overflow-hidden">
-      <h1 className="text-center text-2xl font-bold text-white border-b-2 lg:mx-[30vw] pb-2 mb-5">
+    <div className="bg-[#380b41] overflow-hidden">
+      <h1 className="text-center text-2xl font-bold text-white border-b-2 lg:mx-[30vw] pb-2 mb-5 pt-8">
         Technologies Use By Xsolarie
       </h1>
       <section className="px-[10vw]">

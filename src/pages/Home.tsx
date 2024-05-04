@@ -122,10 +122,10 @@ const Home = () => {
           </p>
         </section>
       </div>
-      <div  className="">
+      <div  className=" bg-[#380b41]">
         <section ref={aboutScrollRef} className="pt-[50px] px-[20px]">
-          <h1 className="text-4xl font-extrabold">About Us</h1>
-          <p className="py-[20px] text-xl font-bold">
+          <h1 className="text-4xl font-extrabold text-white">About Us</h1>
+          <p className="py-[20px] text-xl font-bold text-white">
             At Xsolarie, we are more than just a digital agency; we are your
             partners in success.
             <br />
@@ -138,7 +138,7 @@ const Home = () => {
           </p>
         </section>
       </div>
-      <div className="bg-purple-900 overflow-hidden">
+      <div className="bg-[#2E133A] overflow-hidden">
         <Services />
         <Entertainment />
         <Techbologies />
