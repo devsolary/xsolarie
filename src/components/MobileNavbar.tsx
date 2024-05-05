@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { MenuItems } from "../items/MenuItems"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { FaBars } from "react-icons/fa"
 import { IoCloseSharp } from "react-icons/io5";
 
@@ -17,6 +17,8 @@ export const MobileNavbar = () => {
         setMobileNavbarVisible(true)
     };
 
+    const location = useLocation();
+
   return (
 
         <section className="right-0 absolute pt-[30px] overflow-x-hidden z-10">
@@ -31,7 +33,7 @@ export const MobileNavbar = () => {
                 {
                     MenuItems.map((item, index) => (
                         <li key={index} className="pt-[20px] pl-8">
-                            <Link to={item.url} className="text-2xl font-bold pr-[20px] text-white" >{item.title}</Link> 
+                            <Link to={item.url} className={`text-2xl font-bold pr-[20px] ${location.pathname === item.url ? "text-purple-600" : "text-white"}`} >{item.title}</Link> 
                         </li>
                     ))
                 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MenuItems } from "../items/MenuItems";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -11,6 +11,8 @@ export const LargeScreenNavbar = () => {
     const showJoinForm = () => {
         setJoinTeamForm(!joinTeamForm);
     }
+  
+  const location = useLocation();
 
     useGSAP(() => {
       gsap.to(".showForm", {
@@ -43,7 +45,7 @@ export const LargeScreenNavbar = () => {
                 {
                     MenuItems.map((item, index) => (
                         <li key={index} className="pr-[30px]">
-                            <Link className="text-sm text-white hover:text-gray-400" to={item.url}>{item.title}</Link>
+                            <Link className={`text-sm text-white pb-2 hover:text-gray-400 ${location.pathname === item.url && "border-b-2"}`} to={item.url}>{item.title}</Link>
                         </li>
                     ))
                 }
