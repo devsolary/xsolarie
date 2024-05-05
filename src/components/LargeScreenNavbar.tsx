@@ -25,7 +25,7 @@ export const LargeScreenNavbar = () => {
   return (
     <nav className="lg:overflow-hidden ">
         {
-            joinTeamForm && (<div className="showForm bg-[#380b41] w-[50vw] ml-[25vw] z-10 rounded-3xl my-8 absolute h-[80vh] mt-[15vh]">
+            joinTeamForm && (<div className="showForm bg-[#6F31AE] w-[50vw] ml-[25vw] z-10 rounded-3xl my-8 absolute h-[80vh] mt-[15vh]">
             <h1 className="text-center py-5 text-xl font-bold">Interested In Joining Our Team.
               </h1>
             <form action="" className="pt-[10px] px-10">
@@ -47,7 +47,7 @@ export const LargeScreenNavbar = () => {
                         </li>
                     ))
                 }
-                <button onClick={showJoinForm} className="font-bold bg-gradient-to-br from-[#380b41] to-purple-700 py-1 px-3 rounded-xl text-white hover:scale-125 transition-transform duration-700 ease-in-out">Join Xsolarie Dev Team</button>
+                <button onClick={showJoinForm} className="font-bold bg-gradient-to-br from-[#6F31AE] to-purple-700 py-1 px-3 rounded-xl text-white hover:scale-125 transition-transform duration-700 ease-in-out">Join Xsolarie Dev Team</button>
             </ul>
         </section>
     </nav>

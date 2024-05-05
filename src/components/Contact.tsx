@@ -66,11 +66,11 @@ const Contact = () => {
   })
 
   return (
-    <div className="px-[24px] py-8 bg-[#2E133A] lg:px-[10vw] overflow-hidden">
+    <div className="px-[24px] py-8 bg-[#3D1B60] lg:px-[10vw] overflow-hidden">
         <div>
             <h1 ref={contactHeaderRef} className="text-3xl font-extrabold text-white">Contact Us</h1>
             <p ref={contactRef} className="font-bold text-xl text-white">Ready  to start your next project with us or havea question about our services? We'd love to hear from you! Get in touch with us today and let's create something extraordinary together.</p>
-            <div ref={formRef}  className="bg-[#380B41] px-[10vw] border-2 rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
+            <div ref={formRef}  className="bg-[#6F31AE] px-[10vw] border-2 rounded-3xl my-8 lg:mx-[15vw] lg:px-20">
               <h1 className="text-center py-5 text-2xl font-bold lg:text-lg lg:py-2 text-white">Want to request for our services or have a question.
                 </h1>
                 <p className="font-bold border-b-2 text-center pb-2 lg:text-sm lg:pb-3 text-white">Let Us know Below</p>
@@ -84,7 +84,7 @@ const Contact = () => {
                 <button className="w-[50%] ml-[25%] my-7 bg-gradient-to-r from-purple-950 to-white font-bold p-2 rounded-3xl">Send Message</button>
               </form>
             </div>
-            <div className="py-8 border-2 px-5 rounded-2xl">
+            <div className=" bg-[#250B40] py-8 border-2 px-5 rounded-2xl">
                 <p className="py-2 text-sm  flex flex-row text-white"><strong className="mr-2  flex flex-row">Email <MdOutlineMail className="mx-2 text-2xl "/> : </strong> contact@xsolarie.com</p>
                 <p className="py-2 text-sm flex flex-row text-white"><strong  className="mr-2 flex flex-row">Phone <FaPhoneAlt className="mx-2 text-2xl"/>: </strong> +234-916-877-169</p>
                 <p className="py-2 text-sm flex flex-row text-white"><strong className="py-2 flex flex-row mr-3">Instagram <FaInstagram className="mx-2 text-2xl" />: </strong>  xsolarie</p>

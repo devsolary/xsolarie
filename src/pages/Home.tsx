@@ -7,6 +7,7 @@ import Techbologies from "../components/Techbologies";
 import Contact from "../components/Contact";
 import { useEffect, useRef } from "react";
 import homeBgVideo from "../assets/videos/homeBgVideo.mp4";
+import aboutImg from "../assets/images/aboutUs.png"
 import Preloading from "../components/Preloading";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -122,8 +123,9 @@ const Home = () => {
           </p>
         </section>
       </div>
-      <div  className=" bg-[#380b41]">
-        <section ref={aboutScrollRef} className="pt-[50px] px-[20px]">
+      <div  className=" bg-[#19042D] lg:py-10">
+          <section ref={aboutScrollRef} className="pt-[50px] px-[20px] lg:flex lg:flex-row lg:mx-[5vw]">
+            <div className="lg:w-[50vw] lg:mr-[10vw]">
           <h1 className="text-4xl font-extrabold text-white">About Us</h1>
           <p className="py-[20px] text-xl font-bold text-white">
             At Xsolarie, we are more than just a digital agency; we are your
@@ -135,7 +137,9 @@ const Home = () => {
             <br />
             <br /> Learn more about our journey, value, and the talented
             individual behind our success.
-          </p>
+            </p>
+            </div>
+            <img src={aboutImg} className="hidden lg:block " alt="about Image" />
         </section>
       </div>
       <div className="bg-[#2E133A] overflow-hidden">
