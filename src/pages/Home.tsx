@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Services from "../components/Services";
 import Entertainment from "../components/Entertainment";
-import Techbologies from "../components/Techbologies";
+import Techbologies from "../components/Technologies";
 import Contact from "../components/Contact";
 import { useEffect, useRef } from "react";
 import homeBgVideo from "../assets/videos/homeBgVideo.mp4";
